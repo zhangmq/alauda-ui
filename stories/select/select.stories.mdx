@@ -169,9 +169,8 @@ import { SelectModule, IconModule } from '@alauda/ui';
             key: `option${i + 1}`,
           })),
         value: '',
-        filterFn: (keyword, option) => {
-          return !keyword || option.value.key.includes(keyword);
-        },
+        filterFn: (keyword, option) =>
+          !keyword || option.value.key.includes(keyword),
       },
     }}
   </Story>
